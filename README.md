@@ -5,7 +5,7 @@
 ### REF
 - [awemesome-go](https://github.com/avelino/awesome-go)
 - [awemesome-go-cn](https://github.com/jobbole/awesome-go-cn)
-- 先"ag github.com ./", 然后运行github.py统计
+- 先"ag github.com ./", 然后运行githubstar.py统计
 
 
 ### web服务
@@ -105,18 +105,23 @@
 1. 布隆过滤器: [boomfilters](github.com/tylertreat/boomfilters)
 
 #### 配置文件
-1. yaml解析: [yaml](github.com/go-yaml/yaml)
 1. 处理配置信息: [viper](github.com/spf13/viper)
+1. yaml解析: [yaml](github.com/go-yaml/yaml)
 1. toml解析: [toml](github.com/pelletier/go-toml)
 1. hcl解析: [hcl](github.com/hashicorp/hcl)
+1. xml/html解析: [xquery](github.com/antchfx/xquery)
 
 #### uuid
 1. go-uuid: [go.uuid](github.com/satori/go.uuid)
 1. google-uuid: [uuid](github.com/google/uuid)
 
+#### 日志
+1. logrus: [logrus](github.com/Sirupsen/logrus)
+
 #### debug
 1. 打印: [go-spew](github.com/davecgh/go-spew)
 1. 打印: [go-render](github.com/luci/go-render)
+1. 格式化打印: [ffmt](github.com/go-ffmt/ffmt)
 
 #### http
 1. http请求: [requests](github.com/pkg/requests)
