@@ -19,6 +19,12 @@
 1. 容器管理调度: [kubernetes/kubernetes](github.com/kubernetes/kubernetes)
 1. 容器核心组件: [containerd/containerd](github.com/containerd/containerd)
 
+#### 开发和构建
+1. rpc框架: [go-kit/kit](github.com/go-kit/kit)
+1. 常见中间件: [urfave/negroni](github.com/urfave/negroni)
+1. 微服务工具集: [micro/micro](github.com/micro/micro)
+1. 更快的多语言rpc框架: [smallnest/rpcx](github.com/smallnest/rpcx)
+
 #### rpc
 1. grpc: [grpc/grpc-go](github.com/grpc/grpc-go)
 1. thrift: [apache/thrift](github.com/apache/thrift)
@@ -34,12 +40,6 @@
 1. 更快的web框架: [valyala/fasthttp](github.com/valyala/fasthttp)
 1. 高性能web框架: [julienschmidt/httprouter](github.com/julienschmidt/httprouter)
 
-#### 开发和构建
-1. rpc框架: [go-kit/kit](github.com/go-kit/kit)
-1. 常见中间件: [urfave/negroni](github.com/urfave/negroni)
-1. 微服务工具集: [micro/micro](github.com/micro/micro)
-1. 更快的多语言rpc框架: [smallnest/rpcx](github.com/smallnest/rpcx)
-
 #### 鉴权
 1. httpauth: [goji/httpauth](github.com/goji/httpauth)
 1. authboss: [volatiletech/authboss](github.com/volatiletech/authboss)
@@ -49,6 +49,8 @@
 1. grpc和json数据转化: [grpc-ecosystem/grpc-gateway](github.com/grpc-ecosystem/grpc-gateway)
 
 #### 服务治理
+1. 服务发现: [hashicorp/consul](github.com/hashicorp/consul)
+1. etcd: [etcd-io/etcd](github.com/etcd-io/etcd)
 1. 限速: [juju/ratelimit](github.com/juju/ratelimit)
 1. 断路器: [rubyist/circuitbreaker](github.com/rubyist/circuitbreaker)
 1. 重试: [kamilsk/retry](github.com/kamilsk/retry)
@@ -82,12 +84,17 @@
 1. sql工具集: [jmoiron/sqlx](github.com/jmoiron/sqlx)
 1. 命令行sql: [xo/usql](github.com/xo/usql)
 
+#### redis
+1. redis: [go-redis/redis](github.com/go-redis/redis)
+1. go语言redis客户端: [gomodule/redigo](github.com/gomodule/redigo)
+1. redis客户端又一实现: [mediocregopher/radix](github.com/mediocregopher/radix) 
+
 #### 内存数据库
 1. 内存存储: [muesli/cache2go](github.com/muesli/cache2go)
-1. redis: [go-redis/redis](github.com/go-redis/redis)
+1. 大数据内存存储: [allegro/bigcache](github.com/allegro/bigcache)
+1. 可过期的内存缓存: [bluele/gcache](github.com/bluele/gcache)
 1. kv存储: [boltdb/bolt](github.com/boltdb/bolt)
 1. kv数据库: [dgraph-io/badger](github.com/dgraph-io/badger)
-1. 可过期的内存缓存: [bluele/gcache](github.com/bluele/gcache)
 
 #### nosql
 1. elastic: [olivere/elastic](github.com/olivere/elastic)
@@ -117,6 +124,7 @@
 #### 消息队列
 1. nsq客户端: [nsqio/go-nsq](github.com/nsqio/go-nsq)
 1. kafka: [shopify/sarama](github.com/shopify/sarama)
+1. databus: [linkedin/databus](github.com/linkedin/databus)
 1. nsq-server: [nsqio/nsq](github.com/nsqio/nsq)
 1. rabbitmq: [streadway/amqp](github.com/streadway/amqp)
 1. activemq: [go-stomp/stomp](github.com/go-stomp/stomp)
@@ -124,8 +132,6 @@
 #### 大数据
 1. hdfs客户端: [colinmarc/hdfs](github.com/colinmarc/hdfs)
 
-#### 分布式存储
-1. etcd: [etcd-io/etcd](github.com/etcd-io/etcd)
 
 ### 工具
 
@@ -160,6 +166,7 @@
 
 #### 算法
 1. 时间最久淘汰: [juju/lru](github.com/juju/lru)
+1. 用的最少淘汰: [dgrijalva/lfu-go](github.com/dgrijalva/lfu-go)
 1. set和deque: [juju/collections](github.com/juju/collections)
 1. bitset: [willf/bitset](github.com/willf/bitset)
 1. 布隆过滤器: [tylertreat/boomfilters](github.com/tylertreat/boomfilters)
@@ -176,6 +183,7 @@
 #### uuid
 1. go-uuid: [satori/go.uuid](github.com/satori/go.uuid)
 1. google-uuid: [google/uuid](github.com/google/uuid)
+1. 分布式唯一id: [bwmarrin/snowflake](github.com/bwmarrin/snowflake)
 
 #### http client
 1. http请求: [pkg/requests](github.com/pkg/requests)
@@ -220,6 +228,10 @@
 1. 时序数据库: [influxdata/influxdb](github.com/influxdata/influxdb)
 1. flux查询语言: [influxdata/flux](github.com/influxdata/flux)
 1. 监控和时序数据库: [prometheus/prometheus](github.com/prometheus/prometheus)
+
+#### 性能分析
+1. profile工具: [google/pprof](github.com/google/pprof)
+1. 火焰图: [uber-archive/go-torch](github.com/uber-archive/go-torch)
 
 #### 测试
 1. 测试工具和bdd: [onsi/ginkgo](github.com/onsi/ginkgo)
