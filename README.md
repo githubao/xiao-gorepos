@@ -18,30 +18,35 @@
 1. docker: [moby/moby](github.com/moby/moby)
 1. 容器管理调度: [kubernetes/kubernetes](github.com/kubernetes/kubernetes)
 1. 容器核心组件: [containerd/containerd](github.com/containerd/containerd)
-1. 微服务工具集: [micro/micro](github.com/micro/micro)
 
 #### rpc
 1. grpc: [grpc/grpc-go](github.com/grpc/grpc-go)
 1. thrift: [apache/thrift](github.com/apache/thrift)
 1. thrift: [samuel/go-thrift](github.com/samuel/go-thrift)
 
-#### web框架
-1. 最常用的web框架: [gin-gonic/gin](github.com/gin-gonic/gin)
-1. 更快的web框架: [valyala/fasthttp](github.com/valyala/fasthttp)
-1. 常见的web框架: [labstack/echo](github.com/labstack/echo)
-1. 高性能web框架: [julienschmidt/httprouter](github.com/julienschmidt/httprouter)
-1. 高生产率的web框架: [revel/revel](github.com/revel/revel)
+#### web框架和路由
+1. 高性能极简的web框架: [labstack/echo](github.com/labstack/echo)
 1. 高性能重量web框架: [astaxie/beego](github.com/astaxie/beego)
+1. 最常用的web框架: [gin-gonic/gin](github.com/gin-gonic/gin)
+1. 高生产率全栈的web框架: [revel/revel](github.com/revel/revel)
+1. 轻量可组合的web框架: [go-chi/chi](github.com/go-chi/chi)
+1. 最快的web框架: [kataras/iris](github.com/kataras/iris)
+1. 更快的web框架: [valyala/fasthttp](github.com/valyala/fasthttp)
+1. 高性能web框架: [julienschmidt/httprouter](github.com/julienschmidt/httprouter)
 
 #### 开发和构建
-1. 生成rpc代码: [go-kit/kit](github.com/go-kit/kit)
+1. rpc框架: [go-kit/kit](github.com/go-kit/kit)
 1. 常见中间件: [urfave/negroni](github.com/urfave/negroni)
+1. 微服务工具集: [micro/micro](github.com/micro/micro)
+1. 更快的多语言rpc框架: [smallnest/rpcx](github.com/smallnest/rpcx)
 
 #### 鉴权
 1. httpauth: [goji/httpauth](github.com/goji/httpauth)
+1. authboss: [volatiletech/authboss](github.com/volatiletech/authboss)
 
 #### 序列化
 1. rpc序列化: [ugorji/go](github.com/ugorji/go)
+1. grpc和json数据转化: [grpc-ecosystem/grpc-gateway](github.com/grpc-ecosystem/grpc-gateway)
 
 #### 服务治理
 1. 限速: [juju/ratelimit](github.com/juju/ratelimit)
@@ -54,6 +59,10 @@
 1. 爬虫框架: [gocolly/colly](github.com/gocolly/colly)
 1. jquery解析器: [puerkitobio/goquery](github.com/puerkitobio/goquery)
 
+#### 网络聊天
+1. websocket网络聊天: [olahol/melody](github.com/olahol/melody)
+1. 实时聊天: [centrifugal/centrifugo](github.com/centrifugal/centrifugo)
+
 ### 存储
 
 #### 数据库驱动
@@ -62,10 +71,10 @@
 1. postgresql: [lib/pq](github.com/lib/pq)
 1. sqlite3: [mattn/go-sqlite3](github.com/mattn/go-sqlite3)
 
-#### 云db
+#### 分布式db
 1. 水平扩展sql: [vitessio/vitess](github.com/vitessio/vitess)
 1. 分布式mysql: [pingcap/tidb](github.com/pingcap/tidb)
-1. 云sql: [cockroachdb/cockroach](github.com/cockroachdb/cockroach)
+1. 分布式可扩展sql: [cockroachdb/cockroach](github.com/cockroachdb/cockroach)
 
 #### 数据库工具
 1. go-orm: [jinzhu/gorm](github.com/jinzhu/gorm)
@@ -78,12 +87,17 @@
 1. redis: [go-redis/redis](github.com/go-redis/redis)
 1. kv存储: [boltdb/bolt](github.com/boltdb/bolt)
 1. kv数据库: [dgraph-io/badger](github.com/dgraph-io/badger)
+1. 可过期的内存缓存: [bluele/gcache](github.com/bluele/gcache)
 
 #### nosql
 1. elastic: [olivere/elastic](github.com/olivere/elastic)
 1. 图数据库: [dgraph-io/dgraph](github.com/dgraph-io/dgraph)
 1. 图数据库: [cayleygraph/cayley](github.com/cayleygraph/cayley)
+1. 文件存储: [mbdavid/litedb](github.com/mbdavid/litedb)
+
+#### graphql
 1. graphql: [graphql-go/graphql](github.com/graphql-go/graphql)
+1. 构建graphsq服务: [99designs/gqlgen](github.com/99designs/gqlgen)
 
 #### 消息格式
 1. proto: [gogo/protobuf](github.com/gogo/protobuf)
@@ -91,8 +105,9 @@
 1. msgp: [tinylib/msgp](github.com/tinylib/msgp)
 
 #### json
-1. json解析: [bitly/go-simplejson](github.com/bitly/go-simplejson)
+1. 简单json解析: [bitly/go-simplejson](github.com/bitly/go-simplejson)
 1. 最快的json解析库: [json-iterator/go](github.com/json-iterator/go)
+1. 可以解析路径的json: [tidwall/gjson](github.com/tidwall/gjson)
 
 #### 压缩
 1. snappy压缩格式: [golang/snappy](github.com/golang/snappy)
@@ -103,6 +118,8 @@
 1. nsq客户端: [nsqio/go-nsq](github.com/nsqio/go-nsq)
 1. kafka: [shopify/sarama](github.com/shopify/sarama)
 1. nsq-server: [nsqio/nsq](github.com/nsqio/nsq)
+1. rabbitmq: [streadway/amqp](github.com/streadway/amqp)
+1. activemq: [go-stomp/stomp](github.com/go-stomp/stomp)
 
 #### 大数据
 1. hdfs客户端: [colinmarc/hdfs](github.com/colinmarc/hdfs)
@@ -129,9 +146,17 @@
 1. 数据结构和集合: [go-datastructures](github.com/Workiva/go-datastructures)
 1. 数据结构和集合: [emirpasic/gods](github.com/emirpasic/gods)
 
+### 设计模式
+1. golang常见的设计模式: [tmrts/go-patterns](github.com/tmrts/go-patterns)
+
+### 函数式编程
+1. 流式计算: [chrislusf/glow](github.com/chrislusf/glow)
+1. 函数式编程: [ahl5esoft/golang-underscore](github.com/ahl5esoft/golang-underscore)
+
 ### 文本相关
 1. 命令行模糊搜索: [junegunn/fzf](github.com/junegunn/fzf)
 1. 交互式文本过滤: [peco/peco](github.com/peco/peco)
+1. tag验证: [go-playground/validator](github.com/go-playground/validator)
 
 #### 算法
 1. 时间最久淘汰: [juju/lru](github.com/juju/lru)
@@ -152,11 +177,13 @@
 1. go-uuid: [satori/go.uuid](github.com/satori/go.uuid)
 1. google-uuid: [google/uuid](github.com/google/uuid)
 
-#### http
+#### http client
 1. http请求: [pkg/requests](github.com/pkg/requests)
 1. http请求: [mozillazg/request](github.com/mozillazg/request)
 1. 流式http请求: [smallnest/goreq](github.com/smallnest/goreq)
-1. requests: [levigross/grequests](github.com/levigross/grequests)
+1. 模拟py的requests: [levigross/grequests](github.com/levigross/grequests)
+1. 全武装的http: [h2non/gentleman](github.com/h2non/gentleman)
+1. 加强的http请求: [heimdall](github.com/gojektech/heimdall)
 
 #### 学习
 1. golang书籍: [dariubs/gobooks](github.com/dariubs/gobooks)
@@ -166,17 +193,19 @@
 1. 文件索引: [blevesearch/bleve](github.com/blevesearch/bleve)
 1. 分布式搜索: [go-ego/riot](github.com/go-ego/riot)
 1. 机器学习: [sjwhitworth/golearn](github.com/sjwhitworth/golearn)
+1. solr客户端: [sendgrid/go-solr](github.com/sendgrid/go-solr)
 
 #### 加密
 1. web令牌: [dgrijalva/jwt-go](github.com/dgrijalva/jwt-go)
 
-#### CLI
+#### 命令行界面 
 1. 命令行cli: [spf13/cobra](github.com/spf13/cobra)
 1. 命令行cli: [urfave/cli](github.com/urfave/cli)
 
 #### 日志
 1. logrus: [sirupsen/logrus](github.com/sirupsen/logrus)
 1. 高性能日志: [uber-go/zap](github.com/uber-go/zap)
+1. 可视化错误日志监控sentry: [getsentry/raven-go](github.com/getsentry/raven-go)
 
 #### debug
 1. 打印: [davecgh/go-spew](github.com/davecgh/go-spew)
@@ -193,8 +222,10 @@
 1. 监控和时序数据库: [prometheus/prometheus](github.com/prometheus/prometheus)
 
 #### 测试
-1. 行为驱动开发测试: [onsi/ginkgo](github.com/onsi/ginkgo)
+1. 测试工具和bdd: [onsi/ginkgo](github.com/onsi/ginkgo)
 1. 测试工具集: [stretchr/testify](github.com/stretchr/testify)
+1. mock数据: [golang/mock](github.com/golang/mock)
+1. 行为驱动开发测试(bdd): [data-dog/godog](github.com/data-dog/godog)
 
 #### 依赖管理
 1. dep: [golang/dep](github.com/golang/dep)
